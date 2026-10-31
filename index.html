@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LYRA STORE - Harga Asli Lengkap</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
+body{background:#08080e;color:#fff}
+.h{background:linear-gradient(135deg,#a855f7,#ec4899);padding:18px;text-align:center;position:sticky;top:0;z-index:10}
+.h h1{font-size:17px}
+.search{margin:12px;background:#1a1a23;border-radius:10px;padding:10px 14px;display:flex;gap:8px}
+.search input{background:transparent;border:0;color:#fff;width:100%;outline:none;font-size:13px}
+.tabs{display:flex;gap:6px;overflow:auto;padding:0 12px 10px;white-space:nowrap;scrollbar-width:none}
+.tab{background:#1a1a23;border:1px solid #222;padding:7px 12px;border-radius:20px;font-size:10px;cursor:pointer}
+.tab.active{background:#a855f7}
+.list{padding:0 12px 90px}
+.cat{background:#1a1a23;margin:18px 0 8px;padding:8px 10px;border-radius:8px;font-size:12px;font-weight:bold;color:#a855f7;border-left:3px solid #a855f7}
+.item{background:#13131f;border:1px solid #222230;border-radius:10px;padding:10px 12px;margin-bottom:6px;display:flex;justify-content:space-between;align-items:center;cursor:pointer}
+.item:active{transform:scale(0.98);border-color:#a855f7}
+.item b{font-size:11px} .item small{font-size:9px;opacity:.5;display:block}
+.harga{color:#ec4899;font-weight:bold;font-size:11px} .btn{background:#a855f7;color:#fff;padding:5px 10px;border-radius:6px;font-size:9px;font-weight:bold}
+.note{background:#1a1a23;border:1px dashed #444;border-radius:10px;padding:12px;margin:15px 0;font-size:10px;line-height:1.5;opacity:.7}
+.qris{background:linear-gradient(135deg,#13131f,#1a1030);border:2px dashed #a855f7;border-radius:12px;padding:14px;margin:12px;text-align:center;cursor:pointer}
+</style>
+</head>
+<body>
+<div class="h"><h1>⚡ LYRA STORE - SEMUA HARGA ASLI</h1><p style="font-size:10px;margin-top:4px">Tap Kotak Mana Aja Langsung Order WA • Deposit QRIS Ready</p></div>
+<div class="search">🔍 <input id="s" placeholder="Cari: Netflix Strong, Canva, TikTok, ChatGPT..." oninput="cari(this.value)"></div>
+<div class="tabs">
+<div class="tab active" onclick="f('all',this)">Semua</div>
+<div class="tab" onclick="f('tiktok',this)">TikTok</div>
+<div class="tab" onclick="f('ig',this)">IG</div>
+<div class="tab" onclick="f('wa',this)">WA</div>
+<div class="tab" onclick="f('tele',this)">Telegram</div>
+<div class="tab" onclick="f('yt',this)">YT</div>
+<div class="tab" onclick="f('push',this)">Push Member</div>
+<div class="tab" onclick="f('netflix',this)">Netflix</div>
+<div class="tab" onclick="f('gpt',this)">ChatGPT</div>
+<div class="tab" onclick="f('prem',this)">Premium Lain</div>
+<div class="tab" onclick="f('web',this)">Website</div>
+</div>
+
+<div class="qris" onclick="order('Deposit QRIS All Payment')">
+<b>💳 DEPOSIT & QRIS - KLIK DISINI</b><br><small style="font-size:10px">QRIS • Dana • Gopay • OVO • Transfer - Otomatis 24 Jam</small>
+</div>
+
+<div class="list" id="list">
+
+<div class="cat">🔥 Followers TikTok</div>
+<div class="item" data="tiktok" onclick="order('100 Followers TikTok 5K')"><div><b>100 Followers : 5.000</b></div><div><div class="harga">5K</div><div class="btn">Order</div></div></div>
+<div class="item" data="tiktok" onclick="order('200 Followers TikTok 7K')"><div><b>200 Followers : 7.000</b></div><div><div class="harga">7K</div><div class="btn">Order</div></div></div>
+<div class="item" data="tiktok" onclick="order('300 Followers TikTok 10K')"><div><b>300 Followers : 10.000</b></div><div><div class="harga">10K</div><div class="btn">Order</div></div></div>
+<div class="item" data="tiktok" onclick="order('500 Followers TikTok 16K')"><div><b>500 Followers : 16.000</b></div><div><div class="harga">16K</div><div class="btn">Order</div></div></div>
+
+<div class="cat">❤️ Like TikTok</div>
+<div class="item" data="tiktok" onclick="order('1000 Like TikTok 6K')"><div><b>1.000 Like : 6.000</b></div><div><div class="harga">6K</div><div class="btn">Order</div></div></div>
+<div class="item" data="tiktok" onclick="order('2000 Like TikTok 9K')"><div><b>2.000 Like : 9.000</b></div><div><div class="harga">9K</div><div class="btn">Order</div></div></div>
+<div class="item" data="tiktok" onclick="order('4000 Like TikTok 16K')"><div><b>4.000 Like : 16.000</b></div><div><div class="harga">16K</div><div class="btn">Order</div></div></div>
+<div class="item" data="tiktok" onclick="order('5000 Like TikTok 21K')"><div><b>5.000 Like : 21.000</b></div><div><div class="harga">21K</div><div class="btn">Order</div></div></div>
+
+<div class="cat">👁️ View TikTok</div>
+<div class="item" data="tiktok" onclick="order('10K View TikTok 6K')"><div><b>10.000 View : 6.000</b></div><div><div class="harga">6K</div><div class="btn">Order</div></div></div>
+<div class="item" data="tiktok" onclick="order('15K View TikTok 8K')"><div><b>15.000 View : 8.000</b></div><div><div class="harga">8K</div><div class="btn">Order</div></div></div>
+<div class="item" data="tiktok" onclick="order('20K View TikTok 11K')"><div><b>20.000 View : 11.000</b></div><div><div class="harga">11K</div><div class="btn">Order</div></div></div>
+<div class="item" data="tiktok" onclick="order('50K View TikTok 16K')"><div><b>50.000 View : 16.000</b></div><div><div class="harga">16K</div><div class="btn">Order</div></div></div>
+
+<div class="cat">📸 Followers Instagram</div>
+<div class="item" data="ig" onclick="order('100 Followers IG 5K')"><div><b>100 Followers : 5.000</b></div><div><div class="harga">5K</div><div class="btn">Order</div></div></div>
+<div class="item" data="ig" onclick="order('200 Followers IG 7K')"><div><b>200 Followers : 7.000</b></div><div><div class="harga">7K</div><div class="btn">Order</div></div></div>
+<div class="item" data="ig" onclick="order('500 Followers IG 11K')"><div><b>500 Followers : 11.000</b></div><div><div class="harga">11K</div><div class="btn">Order</div></div></div>
+
+<div class="cat">💜 Like Instagram</div>
+<div class="item" data="ig" onclick="order('100 Like IG 3K')"><div><b>100 Like : 3.000</b></div><div><div class="harga">3K</div><div class="btn">Order</div></div></div>
+<div class="item" data="ig" onclick="order('500 Like IG 5K')"><div><b>500 Like : 5.000</b></div><div><div class="harga">5K</div><div class="btn">Order</div></div></div>
+<div class="item" data="ig" onclick="order('1000 Like IG 7K')"><div><b>1.000 Like : 7.000</b></div><div><div class="harga">7K</div><div class="btn">Order</div></div></div>
+<div class="item" data="ig" onclick="order('2000 Like IG 9K')"><div><b>2.000 Like : 9.000</b></div><div><div class="harga">9K</div><div class="btn">Order</div></div></div>
+
+<div class="cat">👁️ View Instagram</div>
+<div class="item" data="ig" onclick="order('10K View IG 6K')"><div><b>10.000 View : 6.000</b></div><div><div class="harga">6K</div><div class="btn">Order</div></div></div>
+<div class="item" data="ig" onclick="order('20K View IG 11K')"><div><b>20.000 View : 11.000</b></div><div><div class="harga">11K</div><div class="btn">Order</div></div></div>
+<div class="item" data="ig" onclick="order('50K View IG 16K')"><div><b>50.000 View : 16.000</b></div><div><div class="harga">16K</div><div class="btn">Order</div></div></div>
+
+<div class="cat">💬 Saluran WhatsApp</div>
+<div class="item" data="wa" onclick="order('WA 10 Member 3K')"><div><b>10 Member : 3.000</b></div><div><div class="harga">3K</div><div class="btn">Order</div></div></div>
+<div class="item" data="wa" onclick="order('WA 20 Member 4K')"><div><b>20 Member : 4.000</b></div><div><div class="harga">4K</div><div class="btn">Order</div></div></div>
+<div class="item" data="wa" onclick="order('WA 30 Member 5K')"><div><b>30 Member : 5.000</b></div><div><div class="harga">5K</div><div class="btn">Order</div></div></div>
+<div class="item" data="wa" onclick="order('WA 50 Member 8K')"><div><b>50 Member : 8.000</b></div><div><div class="harga">8K</div><div class="btn">Order</div></div></div>
+<div class="item" data="wa" onclick="order('WA 100 Member 13K')"><div><b>100 Member : 13.000</b></div><div><div class="harga">13K</div><div class="btn">Order</div></div></div>
+
+<div class="cat">✈️ Group Member Telegram</div>
+<div class="item" data="tele" onclick="order('Tele 50 Member 1K')"><div><b>50 Member : 1.000</b></div><div><div class="harga">1K</div><div class="btn">Order</div></div></div>
+<div class="item" data="tele" onclick="order('Tele 100 Member 1.5K')"><div><b>100 Member : 1.500</b></div><div><div class="harga">1.5K</div><div class="btn">Order</div></div></div>
+<div class="item" data="tele" onclick="order('Tele 200 Member 2K')"><div><b>200 Member : 2.000</b></div><div><div class="harga">2K</div><div class="btn">Order</div></div></div>
+<div class="item" data="tele" onclick="order('Tele 300 Member 3.8K')"><div><b>300 Member : 3.800</b></div><div><div class="harga">3.8K</div><div class="btn">Order</div></div></div>
+<div class="item" data="tele" onclick="order('Tele 400 Member 4.8K')"><div><b>400 Member : 4.800</b></div><div><div class="harga">4.8K</div><div class="btn">Order</div></div></div>
+<div class="item" data="tele" onclick="order('Tele 500 Member 5.8K')"><div><b>500 Member : 5.800</b></div><div><div class="harga">5.8K</div><div class="btn">Order</div></div></div>
+
+<div class="cat">👁️ Telegram Post View</div>
+<div class="item" data="tele" onclick="order('Post View 50 - 500')"><div><b>50 Post View : 500</b></div><div><div class="harga">500</div><div class="btn">Order</div></div></div>
+<div class="item" data="tele" onclick="order('Post View 100 - 700')"><div><b>100 Post View : 700</b></div><div><div class="harga">700</div><div class="btn">Order</div></div></div>
+<div class="item" data="tele" onclick="order('Post View 500 - 2000')"><div><b>500 Post View : 2.000</b></div><div><div class="harga">2K</div><div class="btn">Order</div></div></div>
+
+<div class="cat">😍 Telegram Auto Reaction + Bonus View</div>
+<div class="item" data="tele" onclick="order('Reaction 50 + View 600')"><div><b>50 Reaction+View : 600</b></div><div><div class="harga">600</div><div class="btn">Order</div></div></div>
+<div class="item" data="tele" onclick="order('Reaction 100 + View 900')"><div><b>100 Reaction : 900</b></div><div><div class="harga">900</div><div class="btn">Order</div></div></div>
+<div class="item" data="tele" onclick="order('Reaction 500 + View 2000')"><div><b>500 Reaction : 2.000</b></div><div><div class="harga">2K</div><div class="btn">Order</div></div></div>
+
+<div class="cat">▶️ YouTube Like</div>
+<div class="item" data="yt" onclick="order('YT Like 50 - 900')"><div><b>50 Like : 900</b></div><div><div class="harga">900</div><div class="btn">Order</div></div></div>
+<div class="item" data="yt" onclick="order('YT Like 100 - 1000')"><div><b>100 Like : 1.000</b></div><div><div class="harga">1K</div><div class="btn">Order</div></div></div>
+<div class="item" data="yt" onclick="order('YT Like 500 - 5000')"><div><b>500 Like : 5.000</b></div><div><div class="harga">5K</div><div class="btn">Order</div></div></div>
+
+<div class="cat">🎬 YouTube Video View</div>
+<div class="item" data="yt" onclick="order('YT View 50 - 1.8K')"><div><b>50 View : 1.800</b></div><div><div class="harga">1.8K</div><div class="btn">Order</div></div></div>
+<div class="item" data="yt" onclick="order('YT View 100 - 3.8K')"><div><b>100 View : 3.800</b></div><div><div class="harga">3.8K</div><div class="btn">Order</div></div></div>
+<div class="item" data="yt" onclick="order('YT View 500 - 11.5K')"><div><b>500 View : 11.500</b></div><div><div class="harga">11.5K</div><div class="btn">Order</div></div></div>
+
+<div class="cat">👥 JASA PUSH MEMBER - Manual</div>
+<div class="item" data="push" onclick="order('Push Member 100 - 5K')"><div><b>100 Member : 5.000</b><small>Manual, No Rush, Antrian</small></div><div><div class="harga">5K</div><div class="btn">Order</div></div></div>
+<div class="item" data="push" onclick="order('Push Member 200 - 9K')"><div><b>200 Member : 9.000</b></div><div><div class="harga">9K</div><div class="btn">Order</div></div></div>
+<div class="item" data="push" onclick="order('Push Member 500 - 18K')"><div><b>500 Member : 18.000</b></div><div><div class="harga">18K</div><div class="btn">Order</div></div></div>
+<div class="note">Note Push Member: 1. Manual bukan suntik 2. No rush 3. Sesuai antrian 4. Ketika admin online 5. Bayar full diawal 6. No komplain unfoll 7. Terburu-buru = makin lama 8. No refund</div>
+
+<div class="cat">🎬 Netflix - No Strong</div>
+<div class="item" data="netflix" onclick="order('Netflix No Strong 1P1U 1 Day 1.7K')"><div><b>Sharing 1P1U 1 Day : 1.700</b></div><div><div class="harga">1.7K</div><div class="btn">Order</div></div></div>
+<div class="item" data="netflix" onclick="order('Netflix No Strong 1P1U 1 Month 9.5K')"><div><b>Sharing 1P1U 1 Month : 9.500</b></div><div><div class="harga">9.5K</div><div class="btn">Order</div></div></div>
+<div class="item" data="netflix" onclick="order('Netflix No Strong 1P2U 1 Month 9K')"><div><b>Sharing 1P2U 1 Month : 9.000</b></div><div><div class="harga">9K</div><div class="btn">Order</div></div></div>
+<div class="item" data="netflix" onclick="order('Netflix No Strong Semi Private 1 Month 12K')"><div><b>Semi Private 1 Month : 12.000</b></div><div><div class="harga">12K</div><div class="btn">Order</div></div></div>
+
+<div class="cat">🔥 Netflix - Strong</div>
+<div class="item" data="netflix" onclick="order('Netflix Strong 1U 1 Day 3K')"><div><b>Sharing 1U 1 Day : 3.000</b></div><div><div class="harga">3K</div><div class="btn">Order</div></div></div>
+<div class="item" data="netflix" onclick="order('Netflix Strong 1U 1 Month 17K')"><div><b>Sharing 1U 1 Month : 17.000</b></div><div><div class="harga">17K</div><div class="btn">Order</div></div></div>
+<div class="item" data="netflix" onclick="order('Netflix Strong 2U 1 Month 15K')"><div><b>Sharing 2U 1 Month : 15.000</b></div><div><div class="harga">15K</div><div class="btn">Order</div></div></div>
+<div class="item" data="netflix" onclick="order('Netflix Strong Semi Private 1 Month 22K')"><div><b>Semi Private 1 Month : 22.000</b></div><div><div class="harga">22K</div><div class="btn">Order</div></div></div>
+
+<div class="cat">🤖 ChatGPT Plus & GO</div>
+<div class="item" data="gpt" onclick="order('GPT Plus 1D Shar 8U 3.5K')"><div><b>GPT Plus 1D Shar 8U : 3.500</b></div><div><div class="harga">3.5K</div><div class="btn">Order</div></div></div>
+<div class="item" data="gpt" onclick="order('GPT Plus 1B Shar 8U 17K')"><div><b>GPT Plus 1B Shar 8U : 17.000</b></div><div><div class="harga">17K</div><div class="btn">Order</div></div></div>
+<div class="item" data="gpt" onclick="order('GPT Plus 1B Shar 5U 25K')"><div><b>GPT Plus 1B Shar 5U : 25.000</b></div><div><div class="harga">25K</div><div class="btn">Order</div></div></div>
+<div class="item" data="gpt" onclick="order('GPT GO 1B Sharing 5U 15K')"><div><b>GPT GO 1B Sharing 5U : 15.000</b></div><div><div class="harga">15K</div><div class="btn">Order</div></div></div>
+<div class="item" data="gpt" onclick="order('GPT GO 7D Private 20K')"><div><b>GPT GO 7D Private : 20.000</b></div><div><div class="harga">20K</div><div class="btn">Order</div></div></div>
+
+<div class="cat">🔥 APK Premium Lainnya</div>
+<div class="item" data="prem" onclick="order('Viu Lifetime 6K')"><div><b>Viu Lifetime : 6.000</b></div><div><div class="harga">6K</div><div class="btn">Order</div></div></div>
+<div class="item" data="prem" onclick="order('Iqiyi 1B Premium 7K')"><div><b>Iqiyi 1B Premium : 7.000</b></div><div><div class="harga">7K</div><div class="btn">Order</div></div></div>
+<div class="item" data="prem" onclick="order('Picsart 1B Sharing 4.5K')"><div><b>Picsart 1B Sharing : 4.500</b></div><div><div class="harga">4.5K</div><div class="btn">Order</div></div></div>
+<div class="item" data="prem" onclick="order('Picsart 1B Private 10K')"><div><b>Picsart 1B Private : 10.000</b></div><div><div class="harga">10K</div><div class="btn">Order</div></div></div>
+<div class="item" data="prem" onclick="order('Getcontact 1B 13K')"><div><b>Getcontact 1B : 13.000</b></div><div><div class="harga">13K</div><div class="btn">Order</div></div></div>
+<div class="item" data="prem" onclick="order('Capcut Sharing 1B 13K')"><div><b>Capcut Sharing 1B : 13.000</b></div><div><div class="harga">13K</div><div class="btn">Order</div></div></div>
+<div class="item" data="prem" onclick="order('Capcut Private 1B 18K')"><div><b>Capcut Private 1B : 18.000</b></div><div><div class="harga">18K</div><div class="btn">Order</div></div></div>
+<div class="item" data="prem" onclick="order('Canva Member 1B 1K')"><div><b>Canva Member 1B : 1.000</b></div><div><div class="harga">1K</div><div class="btn">Order</div></div></div>
+<div class="item" data="prem" onclick="order('Canva Lifetime 6.5K')"><div><b>Canva Lifetime : 6.500</b></div><div><div class="harga">6.5K</div><div class="btn">Order</div></div></div>
+<div class="item" data="prem" onclick="order('Alight Motion 1Y Private 1K')"><div><b>Alight Motion 1Y Gene : 1.000</b></div><div><div class="harga">1K</div><div class="btn">Order</div></div></div>
+<div class="item" data="prem" onclick="order('Wibuku 1B 8K')"><div><b>Wibuku 1B : 8.000</b></div><div><div class="harga">8K</div><div class="btn">Order</div></div></div>
+
+<div class="cat">🌐 JASA WEBSITE & TUTORIAL</div>
+<div class="item" data="web" onclick="order('Jasa Website 5K Jadi 24 Jam')" style="border:2px solid #a855f7"><div><b>JASA WEBSITE 5K - Jadi 24 Jam</b><small>Terima Beres</small></div><div><div class="harga">5K</div><div class="btn">Order</div></div></div>
+<div class="item" data="web" onclick="order('Tutorial Website CUMA 1K')" style="border:2px solid #ec4899"><div><b>TUTORIAL WEBSITE CUMA 1K!</b><small>Template + Panduan + Cover</small></div><div><div class="harga" style="font-size:14px;color:#ec4899">1K</div><div class="btn" style="background:#ec4899">Order</div></div></div>
+
+</div>
+
+<script>
+function order(p){window.open('https://wa.me/6287811854174?text=Halo%20LYRA%20STORE%20mau%20order%20'+encodeURIComponent(p),'_blank');}
+function f(k,el){
+ document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+ el.classList.add('active');
+ document.querySelectorAll('.item,.cat,.note').forEach(c=>{
+  if(k=='all'){c.style.display=c.classList.contains('cat')?'block':c.classList.contains('note')?'block':'flex'; return;}
+  if(c.classList.contains('cat')||c.classList.contains('note')){c.style.display='none'; return;}
+  c.style.display = c.getAttribute('data')==k ? 'flex' : 'none';
+ });
+}
+function cari(q){
+ q=q.toLowerCase();
+ document.querySelectorAll('.item').forEach(c=>{
+  c.style.display = c.innerText.toLowerCase().includes(q) ? 'flex' : 'none';
+ });
+ document.querySelectorAll('.cat,.note').forEach(c=>c.style.display='none');
+}
+</script>
+</body>
+</html>
